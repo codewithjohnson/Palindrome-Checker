@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cornflowerblue;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.Home {
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 0.2rem;
+  width: 25rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+
+h2 {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.712);
+  margin-bottom: 0.6rem;
+  font-family: "Ubuntu", sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  padding-bottom: 0.9rem;
+}
+
+.definition {
+  font-size: 0.8rem;
+  color: rgba(59, 48, 48, 0.849);
+  margin-top: 1.1rem;
+
+  line-height: 1.7;
+}
+
+.input_container {
+  margin-top: 1.1rem;
+}
+
+.label {
+  color: rgba(0, 0, 0, 0.712);
+}
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  width: 100%;
+  padding: 0.6rem 0.3rem;
+  outline: none;
+  margin-top: 0.5rem;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.display > p {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.781);
+  animation: AnimateText 15s linear infinite;
+}
+
+@keyframes AnimateText {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+.display > button {
+  width: 30%;
+  padding: 0.6rem;
+  background-color: cornflowerblue;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  font-weight: bolder;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.display > button:hover {
+  background-color: gray;
+  color: white !important;
+}
+.result {
+  font-size: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .Home {
+    width: 95%;
+  }
+  .definition {
+    font-size: 12.5px;
+  }
+  .display > button {
+    font-size: 1rem;
+  }
+}
