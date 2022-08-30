@@ -48,7 +48,7 @@ const Home = () => {
         <div className="pre">
         Examples :
           <p className="play">
-           madam, ada, did, noon, mum, refer, no lemon, no melon
+           madam, ada, did, noon, mum, refer
           </p>
         </div>
 
