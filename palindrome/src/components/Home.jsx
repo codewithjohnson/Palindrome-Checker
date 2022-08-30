@@ -15,7 +15,7 @@ const Home = () => {
         .join("");
       let filteredInput = value.toLowerCase().replace(/[^A-Z0-9]/gi, "");
       if (filteredInput === reversedInput) {
-        setRes(`😎, ${value} is a palindrome`);
+        setRes(`😎, ${value}, is a palindrome`);
         console.log("IT IS");
       } else {
         setRes(`🥱, ${value} is not a palindrome`);
@@ -46,10 +46,7 @@ const Home = () => {
       </div>
       <div className="display">
         <div className="pre">
-        Examples :
-          <p className="play">
-           madam, ada, did, noon, mum, refer
-          </p>
+          Examples :<p className="play">madam, ada, did, noon, mum, refer</p>
         </div>
 
         <button onClick={HandleClick}>Check</button>
