@@ -5,7 +5,8 @@ const Home = () => {
     <div className="Home">
       <h2>Palindrome Checker</h2>
       <p className="definition">
-        A palindrome is a word, sentence, verse, or even number that reads the same backward or forward.
+        A palindrome is a word, sentence, verse, or even number that reads the
+        same backward or forward.
       </p>
       <div className="input_container">
         <label htmlFor="input" className="label">
@@ -14,11 +15,12 @@ const Home = () => {
         <input type="text" name="input" id="input" className="input" />
       </div>
       <div className="display">
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p className="play">Lorem ipsum dolor sit amet.</p>
         <button>Check</button>
       </div>
       <div className="result">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores?</p>
+        <button className="result-btn">RESULT</button>
+        <p>Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
   );

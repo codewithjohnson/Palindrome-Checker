@@ -65,15 +65,15 @@ h2 {
   margin-top: 2rem;
   overflow: hidden;
 }
-.display > p {
+.play {
   font-size: 0.7rem;
   color: rgba(0, 0, 0, 0.781);
-  animation: AnimateText 15s linear infinite;
+  animation: AnimateText 5s linear infinite;
 }
 
 @keyframes AnimateText {
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(-100%,0);
   }
 }
 .display > button {
@@ -99,6 +99,16 @@ h2 {
 .result {
   font-size: 0.8rem;
   margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.result > .result-btn{
+  background-color: cornflowerblue;
+  color: black;
+  padding: 0.4rem;
+  margin-right: 0.9rem;
+  border-radius: 0.2rem;
 }
 
 @media screen and (max-width: 480px) {
